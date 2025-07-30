@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A demo of HTML5 lists, tables, media, and forms with native validation.">
+  <title>HTML5 Content & Form Assignment</title>
+</head>
+<body>
+
+  <header>
+    <h1>HTML5 Content & Form Showcase</h1>
+    <p>This page demonstrates advanced HTML5 content elements and form validation features without JavaScript.</p>
+  </header>
+
+  <main>
+    <!-- Section 1: Lists -->
+    <section>
+      <h2>Our Services</h2>
+      <ul>
+        <li>Web Development</li>
+        <li>SEO Optimization</li>
+        <li>Accessibility Audits</li>
+      </ul>
+
+      <h3>Project Workflow</h3>
+      <ol>
+        <li>Requirement Gathering</li>
+        <li>Design & Mockups</li>
+        <li>Development</li>
+        <li>Testing</li>
+        <li>Deployment</li>
+      </ol>
+    </section>
+
+    <!-- Section 2: Table -->
+    <section>
+      <h2>Service Pricing Table</h2>
+      <table border="1" cellspacing="0" cellpadding="8">
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Duration</th>
+            <th>Price (USD)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Web Development</td>
+            <td>2 Weeks</td>
+            <td>$1200</td>
+          </tr>
+          <tr>
+            <td>SEO Optimization</td>
+            <td>1 Week</td>
+            <td>$500</td>
+          </tr>
+          <tr>
+            <td>Accessibility Audit</td>
+            <td>3 Days</td>
+            <td>$300</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section 3: Media -->
+    <section>
+      <h2>Media Showcase</h2>
+
+      <h3>Team Photo</h3>
+      <img src="https://via.placeholder.com/400x200" alt="Team working together" width="400" />
+
+      <h3>Introduction Video</h3>
+      <video controls width="400">
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <h3>Background Music</h3>
+      <audio controls>
+        <source src="sample-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <!-- Section 4: HTML5 Form -->
+    <section>
+      <h2>Contact Us Form</h2>
+      <form action="#" method="post" autocomplete="on">
+
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3" /><br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required /><br><br>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="e.g. 0123456789" required /><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Service Inquiry</legend>
+
+          <label for="service">Select a Service:</label>
+          <select id="service" name="service" required>
+            <option value="">-- Choose a service --</option>
+            <option value="web">Web Development</option>
+            <option value="seo">SEO Optimization</option>
+            <option value="accessibility">Accessibility Audit</option>
+          </select><br><br>
+
+          <label for="date">Preferred Start Date:</label>
+          <input type="date" id="date" name="date" required /><br><br>
+
+          <label for="message">Additional Notes:</label><br>
+          <textarea id="message" name="message" rows="4" cols="40" placeholder="Your message here..."></textarea><br><br>
+        </fieldset>
+
+        <input type="checkbox" id="agree" name="agree" required />
+        <label for="agree">I agree to the terms and conditions.</label><br><br>
+
+        <input type="submit" value="Submit Inquiry" />
+        <input type="reset" value="Reset" />
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Design Co. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
